@@ -28,7 +28,7 @@ console.log(friends);
 
 let player = {name: "Virat",
     surName: "Kohli",
-    age: 32,
+    age: 22,
     debut: "august 2008",
     totalRuns: 14000,
     country: "India"
@@ -53,3 +53,14 @@ console.log(player.age);
 console.log(actor.name);
 console.log(actor. surName);
 console.log(actor.dialogue);
+
+
+let marks1 = [90, 98, 78, 97, 95];
+
+let total = marks1[0] + marks1[1] + marks1[2] + marks1[3] + marks1[4];
+
+console.log(total);
+
+let friends1 = ["kamran", "azad", "amit", "subhash"];
+
+console.log(friends1[0]);
