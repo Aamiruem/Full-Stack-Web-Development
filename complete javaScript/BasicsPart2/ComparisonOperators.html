@@ -1,0 +1,130 @@
+<!-- comparison operators
+Here is a comparison of comparison operators in JavaScript with examples in different code styles (e.g. concise, verbose, and arrow function syntax):
+
+**Equality Operators**
+
+| Operator | Description | Concise Example | Verbose Example | Arrow Function Example |
+| --- | --- | --- | --- | --- |
+| `==` | Loose equality (checks value, not type) | `a == b` | `if (a == b) { ... }` | `const isEqual = (a, b) => a == b;` |
+| `===` | Strict equality (checks value and type) | `a === b` | `if (a === b) { ... }` | `const isEqual = (a, b) => a === b;` |
+| `!=` | Loose inequality (checks value, not type) | `a != b` | `if (a != b) { ... }` | `const isNotEqual = (a, b) => a != b;` |
+| `!==` | Strict inequality (checks value and type) | `a !== b` | `if (a !== b) { ... }` | `const isNotEqual = (a, b) => a !== b;` |
+
+**Relational Operators**
+
+| Operator | Description | Concise Example | Verbose Example | Arrow Function Example |
+| --- | --- | --- | --- | --- |
+| `<` | Less than | `a < b` | `if (a < b) { ... }` | `const isLessThan = (a, b) => a < b;` |
+| `>` | Greater than | `a > b` | `if (a > b) { ... }` | `const isGreaterThan = (a, b) => a > b;` |
+| `<=` | Less than or equal to | `a <= b` | `if (a <= b) { ... }` | `const isLessThanOrEqualTo = (a, b) => a <= b;` |
+| `>=` | Greater than or equal to | `a >= b` | `if (a >= b) { ... }` | `const isGreaterThanOrEqualTo = (a, b) => a >= b;` |
+
+**Logical Operators**
+
+| Operator | Description | Concise Example | Verbose Example | Arrow Function Example |
+| --- | --- | --- | --- | --- |
+| `&&` | Logical AND | `a && b` | `if (a && b) { ... }` | `const and = (a, b) => a && b;` |
+| `||` | Logical OR | `a || b` | `if (a || b) { ... }` | `const or = (a, b) => a || b;` |
+| `` | Logical NOT | `a` | `if (!a) { ... }` | `const not = (a) => !a;` |
+
+Note that the concise examples are just a brief demonstration of the operator, while the verbose examples show a more complete code snippet with an `if` statement. The arrow function examples define a reusable function that takes two arguments and returns a boolean value.
+
+I hope this helps Let me know if you have any further questions. -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Equality Operators
+        console.log(1 == 1); // true
+        console.log(1 === 1); // true
+
+
+// If statement
+if (x == 5) {
+  console.log("x is 5");
+}
+
+// Conditional expression
+const result = x == 5 ? "x is 5" : "x is not 5";
+
+// Function
+function isEqual(a, b) {
+  return a == b;
+}
+
+// Object property
+const obj = { x: 5 };
+if (obj.x == 5) {
+  console.log("obj.x is 5");
+}
+
+
+
+
+
+
+
+
+a = 10;
+b = 10;
+c = 10;
+console.log(a == b && b == c);
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+a = 10;
+b = 10;
+c = 10;
+console.log(a == b && b == c);
+
+// logical operators
+
+let x = 10;
+let y = 20;
+
+console.log(x < y); // true
+console.log(x > y); // false
+
+// Assignment Operators
+
+let z = 10;
+z += 5; // z = z + 5
+console.log(z); // 15
+
+z -= 5; // z = z - 5
+    </script>
+</body>
+</html>

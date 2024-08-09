@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = 10;
+        let b = "7";
+        console.log(a + b); //107
+        console.log(a - b); //3
+        console.log(a * b); //70
+        console.log(a / b); //1.42
+        console.log(a % b); //3
+        console.log(a + parseInt(b)); //17
+        console.log(a + Number(b)); //17
+        console.log(a + parseFloat(b)); //10.7
+        
+        //Type Coercion
+        console.log(a + String(b)); //107
+        console.log(a + '' + b); //107
+        console.log(a + ` ${b}`); //10 7
+        console.log(a + b + ''); //107
+        console.log(a + b + 0); //1070
+        console.log(a + b + false); //107false
+        console.log(a + b + null); //107null
+        console.log(a + b + undefined); //107undefined
+        console.log(a + b + Symbol('test')); //107Symbol(test)
+        console.log(a + b + [1, 2, 3]); //107[1, 2, 3]
+        console.log(a + b + {name: 'John'}); //107[object Object]
+
+
+        let m = 10;
+        let n = "Bhopal";
+        console.log(m / n); //  NaN = Not a Number
+
+        //NaN
+        console.log(a / 0); // NaN
+        console.log(a % 0); // NaN
+        console.log(a + 0); // 10
+        console.log(a - 0); // 10
+        console.log(a * 0); // 0
+        console.log(a / null); // NaN
+        console.log(a % null); // NaN
+        console.log(a + null); // null
+        console.log(a - null); // -10
+        console.log(a * null); // 0
+        console.log(a / undefined); // NaN
+        console.log(a % undefined); // NaN
+        console.log(a + undefined); // NaN
+        console.log(a - undefined); // NaN
+        console.log(a * undefined); // NaN
+
+
+        let x = 10/3;
+        console.log(x); // 3.3333333333333335
+        console.log(x.toFixed(2)) //3.33
+        console.log(Math.round(x)); // 3
+        console.log(Math.floor(x)); // 3
+        
+    </script>
+</body>
+</html>

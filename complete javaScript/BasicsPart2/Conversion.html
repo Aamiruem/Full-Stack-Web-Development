@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Conversion</title>
+</head>
+<body>
+    <script>
+        let a = 10;
+        let b = "5";
+        let c = a + Number(b);
+        console.log(c); // Outputs: 15
+
+
+        let d = 10;
+        let e = "5";
+        let f = d + String(e);
+        console.log(f); // Outputs: "105"
+
+        let g = 10;
+        let h = "five";
+        let i = g + Number(h); // Throws a TypeError because "five" cannot be converted to a number
+        console.log(i); // Outputs: NaN
+
+        let j = 10;
+        let k = "five";
+        let l = j + String(k); // Outputs: "10five"
+        console.log(j, l); 
+
+        let m = "ten";
+        let n = 5;
+        let o = Number(m) + n; // Outputs: 15
+        console.log(o);
+
+        let p = "ten";
+        let q = 5;
+        let r = String(p) + q; // Outputs: "ten5"
+        console.log(p, r);
+
+        let s = "ten";
+        let t = 5;
+        let u = Number(s) + String(t); // Throws a TypeError because "ten" cannot be converted to a number
+        console.log(u); // Outputs
+    </script>
+</body>
+</html>
