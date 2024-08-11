@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = parseFloat(prompt("Enter first number"));
+        let b = parseFloat(prompt("Enter second number"));
+        let c = parseFloat(prompt("Enter third number"));
+
+        if (a > b && a > c) {
+            document.write(`${a} is the greatest number.`);
+        } else if (b > a && b > c) {
+            document.write(`${b} is the greatest number.`);
+        } else if (c > a && c > b) {
+            document.write(`${c} is the greatest number.`);
+        } else {
+            document.write(`There is a tie among the numbers or all numbers are equal.`);
+        }
+
+        document.write("<br> Have a good day");
+    </script>
+</body>
+</html>

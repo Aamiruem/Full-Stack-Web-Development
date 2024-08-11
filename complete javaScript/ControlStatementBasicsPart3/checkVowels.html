@@ -1,0 +1,55 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ch = prompt("Enter a character!");
+
+        if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'){
+            document.write(`${ch} is a vowel`);
+        }
+        else {
+            document.write(`${ch} is not a vowel`);
+        }
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ch = prompt("Enter a character!");
+
+        if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
+        ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U'){
+            document.write(`${ch} is a vowel`);
+        }
+        else if((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')){
+            document.write(`${ch} is a consonant`);
+        }
+        else {
+            document.write(`${ch} is not a letter`);
+        }
+    </script>
+</body>
+</html>
