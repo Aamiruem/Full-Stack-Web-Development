@@ -1,19 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
         // soe => sum of even, sod => sum of odd
         let n = Number(prompt("Enter the number"));
-        let soe, sod;
-        for(let i = 1; i <= n; i++){
-            soe = soe * n;
+        let soe = 0;
+        let sod = 0;
+        for (let i = 1; i <= n; i++) {
+            // if(i%2 ==0){
+            //     soe = soe + i;
+            // }
+            // else{
+            //     sod = sod + i;
+            // }
+
+
+            // or using ternary
+            i % 2 === 0 ? (soe = soe + i) : (sod = sod + i);
+
         }
-        document.write(`Factorial is ${fact}`);
+        document.write(`Sum of Even Nos from 1 to  ${n} is ${soe} <br>`);
+        document.write(`Sum of Odd Nos from 1 to  ${n} is ${sod} <br>`);
     </script>
 </body>
+
 </html>
