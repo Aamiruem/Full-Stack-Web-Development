@@ -1,0 +1,58 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("Enter a number")); // convert input to integer
+        let i = 1;
+        do{
+            document.write(`${i} <br>`); // use template literal correctly
+                        i++;
+        }
+        while(i <= n);
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("Enter a number"));
+        let i = 1;
+        let apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=London,UK&appid=YOUR_API_KEY';
+
+        do {
+            fetch(apiUrl, {
+              method: 'GET',
+              headers: {
+                'Content-Type': 'application/json'
+              }
+            })
+              .then(response => response.json())
+              .then(data => {
+                document.write(`4${i} - The weather in London is: ${data.weather[0].description} <br>`);
+              })
+              .catch(error => {
+                document.write(`Error: ${error.message} <br>`);
+              });
+            i++;
+        } while (i <= n);
+    </script>
+</body>
+</html>

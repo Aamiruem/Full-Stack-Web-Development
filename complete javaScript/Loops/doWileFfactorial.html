@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = Number(prompt("Enter ba number"));
+
+        let fact = 1;
+        do{
+            fact = fact * n;
+            n--;
+            document.write(`${n} * ${fact} = ${n*fact} <br>`);
+            // document.write(`Factorial is ${fact}`);
+        } while(n > 1);
+    </script>
+</body>
+</html>
