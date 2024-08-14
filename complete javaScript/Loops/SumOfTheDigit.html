@@ -1,0 +1,86 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = prompt("Enter the number");
+        let sum = 0;
+        while(n > 0){
+            sum = sum + n%10;
+            n = Math.floor(n/10);
+        }
+        document.write(`Sum of the digit is ${sum} `);
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+<!-- sum of the first and last digit  -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = Number(prompt("Enter the number"));
+        let sum = 0, rem;
+
+        rem = n % 10;
+        do{
+        
+        n = Math.floor(n/10);
+    }
+    while(n > 9)
+        document.write(`Sum of the digit is ${rem + n} `);
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of First and Last Digits</title>
+</head>
+<body>
+    <script>
+        let n = Number(prompt("Enter the number"));
+        let firstDigit, lastDigit;
+
+        lastDigit = n % 10; // Get the last digit
+
+        while (n >= 10) {
+            n = Math.floor(n / 10); // Remove the last digit until the first digit is left
+        }
+
+        firstDigit = n; // The remaining number is the first digit
+
+        document.write(`Sum of the first and last digits is ${firstDigit + lastDigit}`);
+    </script>
+</body>
+</html>
