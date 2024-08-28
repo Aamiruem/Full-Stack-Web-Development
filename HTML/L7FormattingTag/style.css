@@ -1,0 +1,10 @@
+p{
+            color: red;
+            font-size: 20px;
+            font-family: Arial;
+            background-color: aqua;
+            border: 2px solid black;
+        }
+        hr {
+            border: 2px solid green;
+        }
