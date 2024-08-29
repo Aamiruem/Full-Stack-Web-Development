@@ -1,0 +1,27 @@
+p{
+    color: red;
+    font-size: 20px;
+    font-family: Arial;
+    background-color: aqua;
+    border: 2px solid black;
+}
+
+li{
+    color: blue;
+    font-size: 20px;
+    font-family: Arial;
+    background-color: aqua;
+    border: 2px solid black;
+
+}
+ul{
+    list-style-type: square;
+
+}
+li{
+    color: blue;
+    font-size: 20px;
+    font-family: Arial;
+    background-color: aqua;
+    border: 2px solid black;
+}
