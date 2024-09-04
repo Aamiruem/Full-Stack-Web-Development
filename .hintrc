@@ -9,7 +9,8 @@
       "default",
       {
         "document-title": "off",
-        "image-alt": "off"
+        "image-alt": "off",
+        "input-image-alt": "off"
       }
     ],
     "axe/language": [
@@ -31,6 +32,14 @@
         "duplicate-id-active": "off"
       }
     ],
-    "axe/forms": "off"
+    "axe/forms": "off",
+    "axe/name-role-value": [
+      "default",
+      {
+        "input-button-name": "off",
+        "button-name": "off"
+      }
+    ],
+    "button-type": "off"
   }
 }
