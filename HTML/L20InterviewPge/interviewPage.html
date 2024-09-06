@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Registration</title>
+</head>
+
+<body bgcolor="bisque">
+    <h1>Register Yourself for the Interview</h1>
+    <br action="http://localhost:3000/interview" method="POST">
+        <label for="fname">First Name: </label>
+        <input placeholder="Enter your First Name" type="text" id="fname" name="fname" required />
+
+        <label for="lname">Last Name: </label>
+        <input placeholder="Enter your Last Name" type="text" id="lname" name="lname" required /><br /><br />
+
+        <label for="age">Age: </label>
+        <input placeholder="Enter your age" type="number" id="age" name="age" required /><br /><br />
+
+        <label for="dob">Date of Birth: </label>
+        <input placeholder="Enter your Date of Birth" type="date" id="dob" name="dob" /><br /><br />
+
+        <label for="mail">Email: </label>
+        <input placeholder="Enter your email" type="email" id="mail" name="mail" />
+
+        <label for="pass">Password: </label>
+        <input placeholder="Enter your password" type="password" id="pass" name="pass" /><br /><br />
+
+        <p>How many years of experience do you have? </p>
+
+        <input type="radio" value="Fresher" id="fresher" name="exp"  /> <label for="fresher">Fresher: </label> <br>
+
+        <input type="radio" value="one year" id="one-year" name="exp" /> <label for="one-year">One year: </label>
+<br>
+        <input type="radio" value="More" id="more" name="exp" /> <label for="more">More than one year: </label>
+
+<BR></BR>
+        <label for="favcolor">Your Favourite Color: </label>
+        <input placeholder="Enter your favourite color" type="color" id="favcolor" name="favcolor" />
+
+
+        <BR></BR>
+        <label for="lang">Choose a Programming Language: </label>
+        <select name="language" id="lang">
+            <option value="Java">Java</option>
+            <option value="C++">C++</option>
+            <option value="Python">Python</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="PHP">PHP</option>
+            <option value="HTML">HTML</option>
+            <option value="C">C</option>
+            <option value="C#">C#</option>
+            <option value="C++">C++</option>
+            <option value="Ruby">Ruby</option>
+            <option value="Perl">Perl</option>
+            <option value="Go">Go</option>
+        </select>
+
+        <br><br>
+        <label for="hire">Tell us why should hire you?: </label> <br>
+        <textarea placeholder="Enter your message: " name="hire" id="hire" rows="10" cols="30"></textarea>
+
+<br>
+        <button type="submit" value="submit">Submit</button>
+        <button type="reset" value="reset">Reset</button>
+    </form>
+</body>
+
+</html>
