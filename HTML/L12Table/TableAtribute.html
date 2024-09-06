@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different Table Structures</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: center;
+        }
+
+        caption {
+            caption-side: top;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Simple Table -->
+    <table>
+        <caption>Simple Table</caption>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+        </tr>
+    </table>
+
+    <!-- Table with Colspan and Rowspan -->
+    <table>
+        <caption>Table with Colspan and Rowspan</caption>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Rowspan Cell</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+        </tr>
+        <tr>
+            <td colspan="2">Colspan Cell (covers two columns)</td>
+        </tr>
+    </table>
+
+    <!-- Table with thead, tbody, tfoot -->
+    <table>
+        <caption>Table with Thead, Tbody, Tfoot</caption>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Row 1, Cell 1</td>
+                <td>Row 1, Cell 2</td>
+                <td>Row 1, Cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 2, Cell 1</td>
+                <td>Row 2, Cell 2</td>
+                <td>Row 2, Cell 3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Footer 1</td>
+                <td>Footer 2</td>
+                <td>Footer 3</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Table with a long description (caption and summary) -->
+    <table summary="This table gives a detailed view of the sales report for Q1 2024.">
+        <caption>Table with Summary and Description</caption>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Sales</th>
+                <th>Revenue</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Product 1</td>
+                <td>500</td>
+                <td>$2000</td>
+            </tr>
+            <tr>
+                <td>Product 2</td>
+                <td>300</td>
+                <td>$1500</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>800</td>
+                <td>$3500</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>

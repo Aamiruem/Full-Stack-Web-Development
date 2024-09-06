@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input Types</title>
+</head>
+
+<body>
+    <h2>Form with Various Input Types</h2>
+    <form action="/submit" method="post">
+
+        <!-- Text input -->
+        <label for="text">Text:</label>
+        <input type="text" id="text" name="text"><br><br>
+
+        <!-- Password input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <!-- Email input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <!-- Number input -->
+        <label for="number">Number:</label>
+        <input type="number" id="number" name="number" min="1" max="10"><br><br>
+
+        <!-- Date input -->
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date"><br><br>
+
+        <!-- Time input -->
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time"><br><br>
+
+        <!-- File input -->
+        <label for="file">File:</label>
+        <input type="file" id="file" name="file"><br><br>
+
+        <!-- Color input -->
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color"><br><br>
+
+        <!-- Range input -->
+        <label for="range">Range (0 to 100):</label>
+        <input type="range" id="range" name="range" min="0" max="100"><br><br>
+
+        <!-- Radio buttons -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <!-- Checkbox -->
+        <label>Choose your hobbies:</label>
+        <input type="checkbox" id="hobby1" name="hobby" value="Reading">
+        <label for="hobby1">Reading</label>
+        <input type="checkbox" id="hobby2" name="hobby" value="Traveling">
+        <label for="hobby2">Traveling</label><br><br>
+
+        <!-- Select dropdown -->
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select><br><br>
+
+        <!-- Textarea -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+
+</html>
